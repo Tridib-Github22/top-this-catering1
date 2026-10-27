@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Connect — Top This! Catering</title>
+  <meta name="description" content="Get in touch with Top This! Catering. Contact us by phone, email, or fill out our form. Also connect with our sister company, Pastrami Tom's." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">Top This!<span> Catering</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="menu.html">Menu &amp; Pricing</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="estimate.html" class="nav-cta">Get an Estimate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Contact">
+    <div class="container">
+      <h1>Contact &amp; Connect</h1>
+      <p>We'd love to hear from you. Reach out with questions, ideas, or to start planning your next event.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- CONTACT INFO -->
+        <aside aria-label="Contact information">
+          <h2 id="contact-heading" style="color:var(--red-dark); margin-bottom:1.5rem;">Get in Touch</h2>
+
+          <div class="contact-detail">
+            <span class="contact-detail-icon" aria-hidden="true">📞</span>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              <a href="tel:+1XXXXXXXXXX">[PHONE NUMBER]</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail-icon" aria-hidden="true">✉️</span>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <a href="mailto:info@topthiscatering.com">[EMAIL ADDRESS]</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail-icon" aria-hidden="true">📍</span>
+            <div class="contact-detail-text">
+              <strong>Service Area</strong>
+              Triangle Area, North Carolina
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail-icon" aria-hidden="true">🕐</span>
+            <div class="contact-detail-text">
+              <strong>Response Time</strong>
+              We typically respond within 1–2 business days
+            </div>
+          </div>
+
+          <!-- PASTRAMI TOM'S -->
+          <div style="margin-top:2rem; padding:1.5rem; background:var(--silver-light); border-radius:6px; border-left:4px solid var(--orange);">
+            <h3 style="color:var(--red-dark); margin-bottom:0.5rem; font-size:1.1rem;">Sister Company</h3>
+            <p style="font-size:0.93rem; color:var(--mid-gray); margin-bottom:1rem;">Want to connect with <strong>Pastrami Tom's</strong>? Follow us on social media for updates, specials, and more.</p>
+            <div class="social-links" style="flex-direction:column; gap:0.6rem;">
+              <a href="#" class="social-link" aria-label="Pastrami Tom's on Facebook" style="text-align:center;">
+                📘 Pastrami Tom's on Facebook
+              </a>
+              <a href="#" class="social-link" aria-label="Pastrami Tom's on Instagram" style="text-align:center;">
+                📸 Pastrami Tom's on Instagram
+              </a>
+            </div>
+            <p style="font-size:0.8rem; color:var(--mid-gray); margin-top:0.75rem;"><em>Replace # links above with actual social media URLs.</em></p>
+          </div>
+        </aside>
+
+        <!-- CONTACT FORM -->
+        <div>
+          <h2 style="color:var(--red-dark); margin-bottom:1.5rem;">Send Us a Message</h2>
+          <div class="form-wrapper">
+            <form data-form="contact" novalidate aria-label="Contact form">
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="con-name">Your Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="con-name" name="name" required placeholder="Jane Smith" autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="con-phone">Phone Number <span aria-hidden="true">*</span></label>
+                  <input type="tel" id="con-phone" name="phone" required placeholder="(919) 555-0100" autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="con-email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="con-email" name="email" required placeholder="you@example.com" autocomplete="email" />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="con-event-type">Event Type</label>
+                  <select id="con-event-type" name="event_type">
+                    <option value="" disabled selected>Select (optional)</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="athletic">Athletic Team</option>
+                    <option value="party">Party / Celebration</option>
+                    <option value="family">Family Gathering</option>
+                    <option value="graduation">Graduation</option>
+                    <option value="holiday">Holiday Event</option>
+                    <option value="other">Other / General Question</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="con-date">Event Date</label>
+                  <input type="date" id="con-date" name="event_date" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="con-guests">Estimated Guests</label>
+                  <input type="number" id="con-guests" name="guest_count" placeholder="e.g. 75" min="1" />
+                </div>
+                <div class="form-group">
+                  <label for="con-location">Event Location</label>
+                  <input type="text" id="con-location" name="location" placeholder="City or venue" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="con-message">Tell Us About Your Event <span aria-hidden="true">*</span></label>
+                <textarea id="con-message" name="message" required placeholder="Questions, details, dietary needs, anything you'd like us to know..." style="min-height:130px;"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+              <p class="form-note">We'll get back to you within 1–2 business days.</p>
+
+            </form>
+
+            <div class="form-success" role="alert">
+              <div class="success-icon" aria-hidden="true">📬</div>
+              <h3>Message Sent!</h3>
+              <p>Thanks for reaching out. We'll be in touch within 1–2 business days. In the meantime, feel free to explore our menu or services.</p>
+              <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1rem;">
+                <a href="menu.html" class="btn btn-primary">View Menu</a>
+                <a href="services.html" class="btn btn-secondary">Our Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK ESTIMATE CTA -->
+  <section class="section section-alt" aria-label="Call to action">
+    <div class="container text-center">
+      <h2 style="margin-bottom:0.75rem;">Ready to get a quote?</h2>
+      <p style="color:var(--mid-gray); max-width:500px; margin:0 auto 1.75rem;">Skip the back-and-forth — fill out our estimate form and we'll come back to you with detailed, custom pricing for your event.</p>
+      <a href="estimate.html" class="btn btn-primary">Request an Estimate</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Top This!<span> Catering</span></div>
+          <p>Proudly serving the Triangle area with fresh, high-quality food and exceptional service since [YEAR FOUNDED].</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu &amp; Pricing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="estimate.html">Get an Estimate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>📞 <a href="tel:+1XXXXXXXXXX">[PHONE NUMBER]</a></p>
+          <p>✉️ <a href="mailto:info@topthiscatering.com">[EMAIL ADDRESS]</a></p>
+          <p>📍 Triangle Area, NC</p>
+          <h4 style="margin-top:1rem;">Sister Company</h4>
+          <div class="social-links">
+            <a href="#" class="social-link">Pastrami Tom's FB</a>
+            <a href="#" class="social-link">Pastrami Tom's IG</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 Top This! Catering. All rights reserved.</span>
+        <span>Triangle Area, NC</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

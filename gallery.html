@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Gallery — Top This! Catering</title>
+  <meta name="description" content="Real events. Real moments. Take a look at some of the events Top This! Catering has had the pleasure of catering." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+    }
+    .gallery-item {
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.14);
+      background: #1A1A1A;
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.22);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.25s ease;
+    }
+    .gallery-item:hover img { opacity: 0.92; }
+    .gallery-caption {
+      padding: 0.75rem 1rem;
+      font-size: 0.88rem;
+      color: #BDC3C7;
+      background: #1A1A1A;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 88vh;
+      border-radius: 6px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.5rem;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .lightbox-close:hover { color: #E67E22; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">Top This!<span> Catering</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="menu.html">Menu &amp; Pricing</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="estimate.html" class="nav-cta">Get an Estimate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Gallery">
+    <div class="container">
+      <h1>Event Gallery</h1>
+      <p>Real events. Real moments. Take a look at some of the events we've had the pleasure of catering.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <section class="section" aria-labelledby="gallery-heading">
+    <div class="container">
+      <h2 class="section-title" id="gallery-heading">A Look at Our Work</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Every photo is a moment we helped make possible. Click any image to view it larger.</p>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item" onclick="openLightbox('images/IMG_3138.jpeg')" role="button" tabindex="0" aria-label="View catering photo 1">
+          <img src="images/IMG_3138.jpeg" alt="Top This! Catering event" loading="lazy" />
+          <div class="gallery-caption">Top This! Catering Event</div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('images/IMG_5358.jpeg')" role="button" tabindex="0" aria-label="View catering photo 2">
+          <img src="images/IMG_5358.jpeg" alt="Top This! Catering event" loading="lazy" />
+          <div class="gallery-caption">Top This! Catering Event</div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('images/IMG_5364.jpeg')" role="button" tabindex="0" aria-label="View catering photo 3">
+          <img src="images/IMG_5364.jpeg" alt="Top This! Catering event" loading="lazy" />
+          <div class="gallery-caption">Top This! Catering Event</div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('images/IMG_5368.jpeg')" role="button" tabindex="0" aria-label="View catering photo 4">
+          <img src="images/IMG_5368.jpeg" alt="Top This! Catering event" loading="lazy" />
+          <div class="gallery-caption">Top This! Catering Event</div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('images/IMG_6188.jpeg')" role="button" tabindex="0" aria-label="View catering photo 5">
+          <img src="images/IMG_6188.jpeg" alt="Top This! Catering event" loading="lazy" />
+          <div class="gallery-caption">Top This! Catering Event</div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('images/IMG_7533.jpeg')" role="button" tabindex="0" aria-label="View catering photo 6">
+          <img src="images/IMG_7533.jpeg" alt="Top This! Catering event" loading="lazy" />
+          <div class="gallery-caption">Top This! Catering Event</div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('images/IMG_9445.jpeg')" role="button" tabindex="0" aria-label="View catering photo 7">
+          <img src="images/IMG_9445.jpeg" alt="Top This! Catering event" loading="lazy" />
+          <div class="gallery-caption">Top This! Catering Event</div>
+        </div>
+
+        <!-- Placeholder for future photos -->
+        <div class="gallery-placeholder" style="height:260px;">
+          <span class="ph-icon" aria-hidden="true">📷</span>
+          <span>More photos coming soon</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-alt" aria-label="Call to action">
+    <div class="container text-center">
+      <h2 style="margin-bottom:0.75rem;">Want us at your next event?</h2>
+      <p style="color:var(--mid-gray); max-width:500px; margin:0 auto 1.75rem;">Let's make your event one worth photographing. Reach out and we'll build a menu around your vision.</p>
+      <a href="estimate.html" class="btn btn-primary">Request an Estimate</a>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close image viewer">&times;</button>
+    <img id="lightbox-img" src="" alt="Enlarged catering photo" />
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Top This!<span> Catering</span></div>
+          <p>Proudly serving the Triangle area with fresh, high-quality food and exceptional service since [YEAR FOUNDED].</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu &amp; Pricing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="estimate.html">Get an Estimate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>📞 <a href="tel:+1XXXXXXXXXX">[PHONE NUMBER]</a></p>
+          <p>✉️ <a href="mailto:info@topthiscatering.com">[EMAIL ADDRESS]</a></p>
+          <p>📍 Triangle Area, NC</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 Top This! Catering. All rights reserved.</span>
+        <span>Triangle Area, NC</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    function openLightbox(src) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.getElementById('lightbox-img').src = '';
+      document.body.style.overflow = '';
+    }
+    // Close on backdrop click
+    document.getElementById('lightbox').addEventListener('click', function(e) {
+      if (e.target === this) closeLightbox();
+    });
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+    // Keyboard accessibility for gallery items
+    document.querySelectorAll('.gallery-item').forEach(function(item) {
+      item.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          item.click();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

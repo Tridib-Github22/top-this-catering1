@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Reviews — Top This! Catering</title>
+  <meta name="description" content="What our clients say about Top This! Catering. Read reviews and share your own experience." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-brand">Top This!<span> Catering</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="menu.html">Menu &amp; Pricing</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="estimate.html" class="nav-cta">Get an Estimate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Client Reviews">
+    <div class="container">
+      <h1>What Our Clients Say</h1>
+      <p>Don't take our word for it — hear from the people we've had the pleasure of serving.</p>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" aria-labelledby="reviews-heading">
+    <div class="container">
+      <h2 class="section-title" id="reviews-heading">Client Testimonials</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Reviews sourced from Bark.com and direct client feedback.</p>
+
+      <div class="reviews-grid">
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"Top This! Catering did an absolutely fantastic job at our corporate event. The food was fresh, beautifully presented, and every single guest complimented the spread. We will definitely be using them again."</p>
+          <div class="review-author">— Sarah M.</div>
+          <div class="review-source">Corporate Event · via Bark.com</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"We hired Top This! for our son's graduation party and they exceeded every expectation. The food was incredible and they handled everything professionally from start to finish."</p>
+          <div class="review-author">— Linda T.</div>
+          <div class="review-source">Graduation Party · via Bark.com</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"As a coach, keeping the team fueled properly is critical. Top This! has been our go-to for team meals all season. Reliable, delicious, and always on time. The players love it."</p>
+          <div class="review-author">— Coach R. Davis</div>
+          <div class="review-source">Athletic Team Catering · via Bark.com</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"I cannot say enough great things. The food at our wedding reception was outstanding — guests are still talking about it months later. Top This! made our day even more special."</p>
+          <div class="review-author">— Jessica &amp; Marcus W.</div>
+          <div class="review-source">Wedding Reception · via Bark.com</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"Ordered for a family reunion of about 60 people — everything was hot, fresh, and plentiful. The team was friendly and easy to work with throughout the whole planning process."</p>
+          <div class="review-author">— The Johnson Family</div>
+          <div class="review-source">Family Reunion · via Bark.com</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"Professional, punctual, and the food was phenomenal. Our board meeting lunch got more compliments than the actual meeting. Will be booking Top This! for all future events."</p>
+          <div class="review-author">— David K.</div>
+          <div class="review-source">Corporate Lunch · via Bark.com</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAVE A REVIEW -->
+  <section class="section section-alt" aria-labelledby="write-review-heading">
+    <div class="container">
+      <h2 class="section-title" id="write-review-heading">Share Your Experience</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Had a great event with us? We'd love to hear about it.</p>
+
+      <div class="form-wrapper">
+        <form data-form="review" novalidate aria-label="Submit a review">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="review-name">Your Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="review-name" name="name" required placeholder="Jane Smith" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="review-event">Event Type <span aria-hidden="true">*</span></label>
+              <select id="review-event" name="event_type" required>
+                <option value="" disabled selected>Select event type</option>
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="athletic">Athletic Team</option>
+                <option value="party">Party / Celebration</option>
+                <option value="family">Family Gathering</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="review-rating">Rating <span aria-hidden="true">*</span></label>
+            <select id="review-rating" name="rating" required>
+              <option value="" disabled selected>Select a rating</option>
+              <option value="5">★★★★★ — Excellent</option>
+              <option value="4">★★★★☆ — Very Good</option>
+              <option value="3">★★★☆☆ — Good</option>
+              <option value="2">★★☆☆☆ — Fair</option>
+              <option value="1">★☆☆☆☆ — Poor</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="review-text">Your Review <span aria-hidden="true">*</span></label>
+            <textarea id="review-text" name="review" required placeholder="Tell us about your experience with Top This! Catering..." style="min-height:140px;"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="review-email">Email Address <span aria-hidden="true" style="color:var(--mid-gray); font-weight:400;">(optional — not published)</span></label>
+            <input type="email" id="review-email" name="email" placeholder="you@example.com" autocomplete="email" />
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Submit Review</button>
+          <p class="form-note">Reviews may be featured on this page. We appreciate your feedback!</p>
+
+        </form>
+
+        <div class="form-success" role="alert">
+          <div class="success-icon" aria-hidden="true">🙌</div>
+          <h3>Thank You!</h3>
+          <p>Your review has been submitted. We truly appreciate you taking the time to share your experience.</p>
+          <a href="index.html" class="btn btn-primary mt-1">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" aria-label="Call to action">
+    <div class="container text-center">
+      <h2 style="margin-bottom:0.75rem;">Ready to experience it yourself?</h2>
+      <p style="color:var(--mid-gray); max-width:500px; margin:0 auto 1.75rem;">Join the list of happy clients and let Top This! Catering make your next event one to remember.</p>
+      <a href="estimate.html" class="btn btn-primary">Request an Estimate</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Top This!<span> Catering</span></div>
+          <p>Proudly serving the Triangle area with fresh, high-quality food and exceptional service since [YEAR FOUNDED].</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu &amp; Pricing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="estimate.html">Get an Estimate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>📞 <a href="tel:+1XXXXXXXXXX">[PHONE NUMBER]</a></p>
+          <p>✉️ <a href="mailto:info@topthiscatering.com">[EMAIL ADDRESS]</a></p>
+          <p>📍 Triangle Area, NC</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 Top This! Catering. All rights reserved.</span>
+        <span>Triangle Area, NC</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
